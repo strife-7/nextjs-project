@@ -6,6 +6,16 @@ import Link from 'next/link';
 
 export default function SignupPage() {
   const searchParams = useSearchParams();
+
+  // Get initial user type from URL parameter
+  const getInitialUserType = (): 'creator' | 'brand' | 'both' => {
+    const type = searchParams.get('type');
+    if (type === 'creator' || type === 'brand' || type === 'both') {
+      return type;
+    }
+    return 'creator'; // fallback
+  };
+
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -13,15 +23,7 @@ export default function SignupPage() {
     confirmPassword: ''
   });
   const [isLoading, setIsLoading] = useState(false);
-  const [userType, setUserType] = useState<'creator' | 'brand' | 'both'>('creator');
-
-  // Read URL parameter and set initial user type
-  useEffect(() => {
-    const type = searchParams.get('type');
-    if (type === 'creator' || type === 'brand' || type === 'both') {
-      setUserType(type);
-    }
-  }, [searchParams]);
+  const [userType, setUserType] = useState<'creator' | 'brand' | 'both'>(getInitialUserType());
 
   const getFocusRingColor = () => {
     switch (userType) {
