@@ -118,6 +118,39 @@ export default function SignupPage() {
                 I'm Both!
               </button>
             </div>
+
+            {/* Cute Handwritten Doodle */}
+            <div className="absolute -right-8 -top-1 transform translate-x-full hidden sm:block">
+              {/* Handwritten Note */}
+              <div className="mb-1">
+                <p className="text-xs text-gray-500 font-handwriting transform -rotate-1 whitespace-nowrap">
+                  Don't worry, you can
+                </p>
+                <p className="text-xs text-gray-500 font-handwriting transform rotate-1 whitespace-nowrap -mt-1">
+                  always change this later! ✨
+                </p>
+              </div>
+
+              {/* Curved Squiggly Arrow */}
+              {/* <svg className="w-20 h-16 text-gray-500 ml-4 -mt-1" viewBox="0 0 80 64" fill="none">
+                <path
+                  d="M15 5 C20 8, 25 12, 30 16 C35 20, 40 24, 45 28 C50 32, 55 36, 60 40"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeDasharray="2,3"
+                  className="animate-pulse"
+                /> */}
+                {/* Arrow head pointing back to the buttons */}
+                {/* <path
+                  d="M56 36 L60 40 L56 44"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg> */}
+            </div>
           </div>
         </div>
 

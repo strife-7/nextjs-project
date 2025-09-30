@@ -29,3 +29,9 @@ body {
   0% { background-position: 0% 50%; }
   100% { background-position: 200% 50%; }
 }
+
+/* Handwriting font */
+.font-handwriting {
+  font-family: var(--font-kalam), 'Comic Sans MS', cursive;
+  font-weight: 400;
+}
