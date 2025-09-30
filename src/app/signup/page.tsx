@@ -1,9 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
 export default function SignupPage() {
+  const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -12,6 +14,14 @@ export default function SignupPage() {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [userType, setUserType] = useState<'creator' | 'brand' | 'both'>('creator');
+
+  // Read URL parameter and set initial user type
+  useEffect(() => {
+    const type = searchParams.get('type');
+    if (type === 'creator' || type === 'brand' || type === 'both') {
+      setUserType(type);
+    }
+  }, [searchParams]);
 
   const getFocusRingColor = () => {
     switch (userType) {

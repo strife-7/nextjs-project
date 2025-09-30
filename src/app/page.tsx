@@ -56,6 +56,58 @@ export default function Home() {
             Show me a random portfolio
           </a>
         </div>
+
+        <Link
+          className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+          href="/signup?type=creator"
+          /* Uncomment below to open page in new tab */
+          // target="_blank"
+          // rel="noopener noreferrer"
+        >
+          <Image
+            className="dark:invert"
+            src="/vercel.svg"
+            alt="Vercel logomark"
+            width={20}
+            height={20}
+          />
+          Creators Sign Up
+        </Link>
+
+        <Link
+          className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+          href="/signup?type=brand"
+          /* Uncomment below to open page in new tab */
+          // target="_blank"
+          // rel="noopener noreferrer"
+        >
+          <Image
+            className="dark:invert"
+            src="/vercel.svg"
+            alt="Vercel logomark"
+            width={20}
+            height={20}
+          />
+          Brand Sign Up
+        </Link>
+
+        <Link
+          className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+          href="/signup?type=both"
+          /* Uncomment below to open page in new tab */
+          // target="_blank"
+          // rel="noopener noreferrer"
+        >
+          <Image
+            className="dark:invert"
+            src="/vercel.svg"
+            alt="Vercel logomark"
+            width={20}
+            height={20}
+          />
+          Both Sign Up
+        </Link>
+
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
