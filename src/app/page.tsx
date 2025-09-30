@@ -17,16 +17,20 @@ export default function Home() {
           MyCreators.my
         </h1>
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
+          <li className="tracking-[-.01em]">
             {/* Get started by editing{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
               src/app/page.tsx
             </code> */}
-            For brands {" -> "} your one-stop center for ____.
+            For brands {" -> "} your center for brand awareness.
           </li>
           <li className="tracking-[-.01em]">
             {/* Save and see your changes instantly. */}
             For creators {" -> "} your creativity gateway.
+          </li>
+          <li className="tracking-[-.01em]">
+            {/* Save and see your changes instantly. */}
+            For both {" -> "} a unified platform for collaboration.
           </li>
         </ol>
 
@@ -53,7 +57,7 @@ export default function Home() {
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                 </svg>
-                Browse Portfolios
+                Browse our Brands and Creators
               </a>
             </div>
           </div>
@@ -105,9 +109,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
                 Creator & Brand Sign-Up
-                <span className="absolute top-0 right-2 text-xs bg-yellow-400 text-yellow-900 px-2 py-0.5 rounded-full transform rotate-12">
+                {/* <span className="absolute top-0 right-2 text-xs bg-yellow-400 text-yellow-900 px-2 py-0.5 rounded-full transform rotate-12">
                   Popular!
-                </span>
+                </span> */}
               </Link>
             </div>
           </div>
